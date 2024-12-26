@@ -27,7 +27,11 @@ public class task_1
     {
         double D = b*b - 4*a*c;
         double[] answer;
-        if(D == 0)
+        if(D < 0)
+        {
+           answer = new double[0];
+        }
+        else if(D == 0)
         {
             answer = new double[1];
             answer[0]+=-b/(2*a);
